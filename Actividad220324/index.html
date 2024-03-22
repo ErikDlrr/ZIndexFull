@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="Erik Dlr" content="Actividad z-index">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://www.upslp.edu.mx/upslp/wp-content/themes/icemagtheme/images/demo/favico.ico">
+    <title>Introducción al z-index </title>
+
+    <head>
+        <script>
+            function openTab(tabName) {
+                // Ocultar todos los contenidos de las pestañas
+                var tabContents = document.getElementsByClassName("tab-content");
+                for (var i = 0; i < tabContents.length; i++) {
+                    tabContents[i].style.display = "none";
+                }
+
+                // Mostrar el contenido de la pestaña seleccionada
+                document.getElementById(tabName).style.display = "block";
+            }
+        </script>
+    </head>
+
+<body>
+    <div class="head">
+
+        <div class="logo">
+            <a href="https://www.upslp.edu.mx"><img
+                    src="https://www.upslp.edu.mx/upslp/wp-content/themes/icemagtheme/images/demo/icemaglogo.png"
+                    alt="UPSLP"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#" onclick="openTab('tab0')">Inicio</a>
+            <a href="#tab1 " onclick="openTab('tab1')">Presentacion</a>
+            <a href="#tab2" onclick="openTab('tab2')">Ejemplo</a>
+            <a href="#ejer1" onclick="openTab('tab3')">Ejercicio 1</a>
+            <a href="#ejer2" onclick="openTab('tab4')">Ejercicio 2</a>
+        </nav>
+
+    </div>
+
+    <div id="tab0" class="tab-content">
+        <div class="image-container">
+            <br><br><br><br>
+            <h1
+                style="font-size: 78px; color: white; text-align: center; font-family: Roboto, sans-serif; margin: 20%;">
+                Z-INDEX <br> CSS</h1>
+        </div>
+    </div>
+
+    <div id="tab1" class="tab-content">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+         padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+         border-radius: 1px; will-change: transform;">
+            <iframe loading="lazy"
+                style="position: absolute; width: 65%; height: 65%; top: 50%; left: 50%; transform: translate(-50%, -50%); border: none; padding: 0; margin: 0;"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGAJju85Xc&#x2F;FqgMpd56XhNI-L9j-yUzDw&#x2F;view?embed"
+                allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+
+        <iframe src="ejem.html" position="absolute" width="70%" height="600px"></iframe>
+
+        <iframe
+            src="https://docs.google.com/document/d/e/2PACX-1vRISmDkkDp7_-ZsqPBiCnM5AdYjbR885tUZGnws6PSC3lVFBxAXc7zKTVFdgmBhMxb3T2UbLUIAQYLu/pub?embedded=true"
+            width="29%" height="600px"></iframe>
+
+
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <iframe
+            src="https://docs.google.com/document/d/e/2PACX-1vRc4TDAhfZ2TuLIVyiGKGfn6WcloZryO_mfrUrvY79dVDXRGw8tCHA7g6Socsq_Xf4eF406uJXvdzdP/pub?embedded=true"
+            width="55%" height="1180px"></iframe>
+        <br>
+        <h2 style="color: white; font-size: 24px;">Imagen de ejemplo</h2>
+       </div> <img src="img/example.jpg" style="width: 80%;">
+
+        <form
+            action="https://upslpedu-my.sharepoint.com/:f:/g/personal/177700_upslp_edu_mx/EkdEeGEBkbdPlJ8FatMfIsQB2VWbGXkMKcG0dsKWp0A6JQ?e=6H9sQE">
+            <input type="submit" value="Enviar" class="myButton">
+        </form>
+        <br><br><br><br><br>
+    </div>
+
+    <div id="tab4" class="tab-content">
+
+        <h2>Ejercicio Teorico</h2>
+        <div id="quiz">
+            <h1>.</h1><br>
+            <h1>.</h1><br>
+            <iframe
+                src="https://docs.google.com/document/d/e/2PACX-1vS1hiEyjfnWTJROpmL6UXw-SZ1NFlJH0DiEKiSjE5tgNtsBzYO7VhY57oKzrZulNpNyQfBclhJOB2Ec/pub?embedded=true"
+                width="55%" height="500px"></iframe>
+            <h1 style="color: white; font-size: 24px;">Cuestionario</h1><br>
+            <h3 id="timer">Tiempo restante: 08:00</h3>
+            <form id="quiz-form">
+                <!-- Pregunta 1 -->
+                <p>¿Cuántas cajas contenedoras hay? ¿Están identificadas por id o por class?</p>
+                <input type="radio" name="question1" value="1"> Hay 2 cajas contenedoras identificadas por id.<br>
+                <input type="radio" name="question1" value="2"> Hay 3 cajas contenedoras identificadas por
+                class.<br>
+                <input type="radio" name="question1" value="3"> Hay 3 cajas contenedoras identificadas por id.<br>
+                <input type="radio" name="question1" value="4"> Hay 2 cajas contenedoras identificadas por
+                class.<br>
+
+                <!-- Pregunta 2 -->
+                <p>¿Cuál es el grosor del borde de la caja azul y en qué unidades está expresado?</p>
+                <input type="radio" name="question2" value="1"> El grosor es de 2 y está expresado en em.<br>
+                <input type="radio" name="question2" value="2"> El grosor es de 3 y está expresado en píxeles.<br>
+                <input type="radio" name="question2" value="3"> El grosor es de 1 y está expresado en
+                porcentaje.<br>
+                <input type="radio" name="question2" value="4"> El grosor es de 4 y está expresado en puntos.<br>
+
+                <!-- Pregunta 3 -->
+                <p>¿Por qué se superponen unas cajas encima de otras? ¿En qué orden aparecen las cajas superpuestas
+                    (es
+                    decir, cuál está arriba, cuál está en posición intermedia y cuál está en el fondo)? ¿Por qué
+                    aparecen con ese orden y no otro?</p>
+                <input type="radio" name="question3" value="1"> Se superponen debido a los valores de opacidad
+                aplicados. El orden es caja azul, caja ocre y luego caja gris debido a la opacidad de cada una.<br>
+                <input type="radio" name="question3" value="2"> Se superponen debido a las propiedades de margin con
+                valores negativos. El orden es caja gris, caja ocre y luego caja azul debido a los valores de
+                margin.<br>
+                <input type="radio" name="question3" value="3"> Se superponen debido a las propiedades de z-index.
+                El
+                orden es caja ocre, caja azul y luego caja gris debido a los valores de z-index.<br>
+                <input type="radio" name="question3" value="4"> Se superponen debido a los valores de opacidad
+                aplicados. El orden es caja gris, caja azul y luego caja ocre debido a la opacidad de cada una.<br>
+
+                <!-- Pregunta 4 -->
+                <p>Queremos que la caja gris se sitúe por encima del resto de cajas. ¿Qué modificaciones en el
+                    código
+                    hemos de hacer para lograr este objetivo?</p>
+                <input type="radio" name="question4" value="1"> Agregar la propiedad 'z-index: 1;' al selector de la
+                caja gris en el CSS.<br>
+                <input type="radio" name="question4" value="2"> Cambiar el orden de las cajas en el HTML para que la
+                caja gris esté al final.<br>
+                <input type="radio" name="question4" value="3"> Añadir la propiedad 'z-index: 10;' al selector de la
+                caja gris en el CSS.<br>
+                <input type="radio" name="question4" value="4"> Eliminar la propiedad 'position: relative;' del
+                selector
+                de la caja gris en el CSS.<br>
+                <br>
+
+                <input type="submit" value="Enviar">
+                <br><br><br><br>
+            </form>
+
+            <script>
+                var timeRemaining = 8 * 60; // 8 minutes in seconds
+
+                var timer = setInterval(function () {
+                    timeRemaining--;
+                    var minutes = Math.floor(timeRemaining / 60);
+                    var seconds = timeRemaining % 60;
+                    document.getElementById('timer').textContent = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+                    if (timeRemaining <= 0) {
+                        clearInterval(timer);
+                        var inputs = document.querySelectorAll('input[type="radio"]');
+                        for (var i = 0; i < inputs.length; i++) {
+                            inputs[i].disabled = true;
+                        }
+                    }
+                }, 1000);
+
+                document.getElementById('quiz-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    var answers = {
+                        question1: document.querySelector('input[name="question1"]:checked'),
+                        question2: document.querySelector('input[name="question2"]:checked'),
+                        question3: document.querySelector('input[name="question3"]:checked'),
+                        question4: document.querySelector('input[name="question4"]:checked')
+                    };
+
+                    var correctAnswers = {
+                        question1: '3',
+                        question2: '2',
+                        question3: '2',
+                        question4: '3'
+                    };
+
+                    var correct = true;
+                    for (var question in answers) {
+                        if (!answers[question] || answers[question].value !== correctAnswers[question]) {
+                            correct = false;
+                            console.log(question + ': Incorrecto');
+                        } else {
+                            console.log(question + ': Correcto');
+                        }
+                    }
+
+                    if (correct) {
+                        alert('¡Todas las respuestas son correctas!');
+                    } else {
+                        alert('Algunas respuestas son incorrectas. Por favor, revisa tus respuestas.');
+                    }
+
+                    var inputs = document.querySelectorAll('input[type="radio"]');
+                    for (var i = 0; i < inputs.length; i++) {
+                        inputs[i].checked = false;
+                    }
+                });
+            </script>
+        </div>
+    </div>
+    <footer>
+        <h4> Pagina web desarrollada por el alumno 177700 para la materia de CNT de la UPSLP. Derechos reservados.
+            &copy; 2024.</h4>
+    </footer>
+</body>
+
+</html>

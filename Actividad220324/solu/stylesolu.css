@@ -1,0 +1,50 @@
+.catalog {
+    position: relative;
+}
+
+.movie {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+#movie1 {
+    top: 35%;
+    left: 58%;
+    z-index: 0;
+}
+
+#movie2 {
+    top: 35%;
+    left: 36%;
+    z-index: 3;
+}
+
+#movie3 {
+    top: 35%;
+    left: 250px;
+    z-index: 0;
+}
+body {
+    background-color: black;
+}
+.inicio {
+    text-align: center;
+    color: white;
+}
+
+.inicio h1 {
+    color: red;
+    font-size: 5em; /* Ajusta este valor para cambiar el tamaño del texto */
+}
+
+.inicio h2, .inicio p {
+    color: white;
+}
